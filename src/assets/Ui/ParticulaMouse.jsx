@@ -1,4 +1,5 @@
-import { AnimatePresence } from "framer-motion";
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from "framer-motion";
 import { useCallback, useState } from "react";
 
 function SmokeEffect({ color = "#ffffff", particlesPerEmit = 2 }) {
@@ -42,7 +43,7 @@ function SmokeEffect({ color = "#ffffff", particlesPerEmit = 2 }) {
 
   return (
     <div
-      className="w-full h-full relative overflow-hidden bg-gray-900"
+      className="absolute top-0 left-0 w-full h-full pointer-events-none"
       onMouseMove={handleMouseMove}
     >
       <AnimatePresence>
@@ -78,7 +79,7 @@ function SmokeEffect({ color = "#ffffff", particlesPerEmit = 2 }) {
 
 export default function ParticulaMouse() {
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full relative">
       <SmokeEffect />
     </div>
   );

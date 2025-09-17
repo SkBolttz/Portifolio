@@ -2,8 +2,19 @@ import "../../index.css";
 
 export default function BotaoCircular({ texto }) {
   return (
-    <button className="px-4 py-2 bg-[#740B89] text-white rounded-full hover:bg-[#8A2BE2] transition text-[25px]">
-      {texto}
+    <button className="relative px-6 py-2 rounded-full text-white bg-[#000404] overflow-hidden transition-colors duration-300 hover:bg-[#AC46FF] w-[350px] h-[50px]">
+      <span
+        className="absolute inset-0 rounded-full bg-gradient-to-r from-[#741C68] via-[#4E0D81] to-[#8A2BE2] animate-gradient-slow pointer-events-none"
+        style={{
+          mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+          WebkitMask:
+            "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+          maskComposite: "exclude",
+          WebkitMaskComposite: "xor",
+          padding: "2px",
+        }}
+      />
+      <span className="relative">{texto}</span>
     </button>
   );
 }

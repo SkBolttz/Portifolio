@@ -22,14 +22,14 @@ export function CometCardDemo() {
     <CometCard className="w-[500px] h-[600px] -translate-y-28">
       <button
         type="button"
-        className="my-10 flex w-full flex-col items-stretch rounded-[16px] border-0 bg-transparent p-4 md:my-20 md:p-6"
+        className="my-10 flex w-full flex-col items-stretch rounded-[16px] border-0 bg-transparent p-4 md:my-20 md:p-6 bg-[#3B2740] hover:bg-[#6E3E7D] transition duration-300 ease-in-out rounded-[16px] hover:shadow-[0_0_15px_#8A2BE2] hover:-translate-y-2"
         aria-label="View invite F7RA"
       >
         <div className="mx-2 flex-1">
           <div className="relative mt-2 aspect-[3/4] w-full w-[calc(100%+6rem)] -translate-x-[0%] -translate-y-[6%]">
             <img
               loading="lazy"
-              className="absolute inset-0 h-full w-full rounded-[16px] object-cover contrast-75"
+              className="absolute inset-0 h-full w-full rounded-[16px] object-cover contrast-75 translate-y-8"
               alt="Invite background"
               src="../../public/p1.jpeg"
               style={{ boxShadow: "rgba(0,0,0,0.05) 0px 5px 6px 0px" }}
@@ -87,14 +87,14 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="bg-gradient-to-b from-[#4B0E57] to-[#1f031f] flex items-center justify-between relative px-8 md:px-20 py-16">
+      <div className="bg-[#3B2740] flex items-center justify-between relative px-8 md:px-20 py-16">
         <div className="absolute inset-0 z-0">
           <BackgroundLines svgOptions={{}} />
         </div>
         <div className="relative z-10 flex-1 px-64">
           <SplitText
             text="Pedro Henrique"
-            className="text-[100px] text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]"
+            className="text-[100px] text-[#6E3E7D] font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]"
             delay={100}
             duration={1.5}
             ease="power3.out"
@@ -108,7 +108,7 @@ function App() {
           />
           <SplitText
             text="de Borba"
-            className="text-[40px] text-white font-montserrat"
+            className="text-[40px] text-[#6E3E7D] font-montserrat"
             delay={200}
             duration={1.5}
             ease="power3.out"
@@ -146,7 +146,12 @@ function App() {
         </div>
       </div>
 
-      <ScrollRevealAvancado from="left" delay={50} duration={900} stagger={50}>
+      <ScrollRevealAvancado
+        from="bottom"
+        delay={50}
+        duration={900}
+        stagger={50}
+      >
         <div className="bg-[#1F1F1F]">
           <div className="bg-[#1F1F1F] flex items-center justify-center relative px-8 md:px-20 py-16">
             <div>
@@ -262,7 +267,12 @@ function App() {
           </div>
         </ScrollRevealAvancado>
       </div>
-      <ScrollRevealAvancado from="left" delay={50} duration={900} stagger={50}>
+      <ScrollRevealAvancado
+        from="bottom"
+        delay={50}
+        duration={900}
+        stagger={50}
+      >
         <div className="bg-[#1F1F1F] pb-20">
           <div>
             <div className="flex justify-center py-14">

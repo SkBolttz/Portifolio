@@ -8,7 +8,7 @@ export const BackgroundLines = ({ children, className, svgOptions }) => {
   return (
     <div
       className={cn(
-        "h-[20rem] md:h-screen w-full bg-gradient-to-r from-[#4B0E57] to-[#1f031f]",
+        "h-[20rem] md:h-screen w-full bg-[#121212]",
         className
       )}
     >

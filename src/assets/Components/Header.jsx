@@ -6,7 +6,7 @@ import TextType from "../Ui/TextType";
 export default function Header() {
   return (
     <>
-      <header className="hidden md:flex fixed top-0 w-full z-50 bg-[#6E3E7D] py-3">
+      <header className="fixed top-0 w-full z-50 bg-[#6E3E7D] py-3">
         <nav className="flex flex-col md:flex-row md:justify-between items-center md:px-20 px-4 gap-3">
           <TextType
             text={[

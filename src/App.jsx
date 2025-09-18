@@ -71,14 +71,14 @@ export function CardHoverEffectDemo3() {
 
 const imageLogos = [
   { src: "./atom.png", alt: "React" },
-  { src: "./css-3.png", alt: "Java" },
+  { src: "./css-3.png", alt: "CSS" },
   { src: "./github.png", alt: "github" },
-  { src: "./public/html.png", alt: "html" },
-  { src: "./public/java-script.png", alt: "javascript" },
-  { src: "./public/java.png", alt: "java" },
-  { src: "./public/oracle.png", alt: "oracle" },
-  { src: "./public/springboot.png", alt: "springboot" },
-  { src: "./public/postgre.png", alt: "postgre" },
+  { src: "./html.png", alt: "html" },
+  { src: "./java-script.png", alt: "javascript" },
+  { src: "./java.png", alt: "java" },
+  { src: "./oracle.png", alt: "oracle" },
+  { src: "./springboot.png", alt: "springboot" },
+  { src: "./postgre.png", alt: "postgre" },
 ];
 
 const handleAnimationComplete = () => {};

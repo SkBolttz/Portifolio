@@ -10,7 +10,7 @@ export default function ContactForm() {
         </h1>
 
         {[
-          { icon: "📧", label: "Email", value: "pedrohenriqueborba1@gmail.com" },
+          { icon: "📧", label: "Email", value: "devvhenrique@gmail.com" },
           { icon: "📱", label: "Telefone", value: "+55 47 9251-2146" },
           { icon: "📍", label: "Localização", value: "Blumenau, SC" },
         ].map((item, index) => (

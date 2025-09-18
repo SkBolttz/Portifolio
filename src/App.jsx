@@ -31,7 +31,7 @@ export function CometCardDemo() {
               loading="lazy"
               className="absolute inset-0 h-full w-full rounded-[16px] object-cover contrast-75 translate-y-8"
               alt="Invite background"
-              src="../../public/p1.jpeg"
+              src="./p1.jpeg"
               style={{ boxShadow: "rgba(0,0,0,0.05) 0px 5px 6px 0px" }}
             />
           </div>
@@ -70,15 +70,15 @@ export function CardHoverEffectDemo3() {
 }
 
 const imageLogos = [
-  { src: "../../public/atom.png", alt: "React" },
-  { src: "../../public/css-3.png", alt: "Java" },
-  { src: "../../public/github.png", alt: "github" },
-  { src: "../../public/html.png", alt: "html" },
-  { src: "../../public/java-script.png", alt: "javascript" },
-  { src: "../../public/java.png", alt: "java" },
-  { src: "../../public/oracle.png", alt: "oracle" },
-  { src: "../../public/springboot.png", alt: "springboot" },
-  { src: "../../public/postgre.png", alt: "postgre" },
+  { src: "./atom.png", alt: "React" },
+  { src: "./css-3.png", alt: "Java" },
+  { src: "./github.png", alt: "github" },
+  { src: "./public/html.png", alt: "html" },
+  { src: "./public/java-script.png", alt: "javascript" },
+  { src: "./public/java.png", alt: "java" },
+  { src: "./public/oracle.png", alt: "oracle" },
+  { src: "./public/springboot.png", alt: "springboot" },
+  { src: "./public/postgre.png", alt: "postgre" },
 ];
 
 const handleAnimationComplete = () => {};
@@ -94,7 +94,7 @@ function App() {
         <div className="relative z-10 flex-1 px-64">
           <SplitText
             text="Pedro Henrique"
-            className="text-[100px] text-[#6E3E7D] font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]"
+            className="text-[80px] text-[#6E3E7D] font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]"
             delay={100}
             duration={1.5}
             ease="power3.out"

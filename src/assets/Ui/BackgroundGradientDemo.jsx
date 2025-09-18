@@ -8,7 +8,7 @@ export function BackgroundGradientDemo() {
       title: "Sistema de Coworking",
       description:
         "Portal de gerenciamento de coworkings com agendamento, cancelamento e remarcação de reservas de salas, controle de acesso, histórico de uso, visualização de atividades e administração completa de usuários.",
-      img: "../../public/Coworking-hall.jpg",
+      img: "./Coworking-hall.jpg",
       buttonText: "Ver projeto",
       link: "https://nexuscoworking.vercel.app/",
     },
@@ -16,7 +16,7 @@ export function BackgroundGradientDemo() {
       title: "Controle de Reembolso Corporativo",
       description:
         "Sistema para solicitação e gerenciamento de reembolsos corporativos com cadastro de usuários, acompanhamento de status e controle de comprovantes.",
-      img: "../../public/Reembolso-hall.png",
+      img: "./Reembolso-hall.png",
       buttonText: "Ver projeto",
       link: "https://meu-projeto-suporte.com",
     },
@@ -24,7 +24,7 @@ export function BackgroundGradientDemo() {
       title: "Portal do Paciente",
       description:
         "Portal do Paciente com recursos para agendamento, cancelamento e remarcação de consultas, acesso ao histórico de atendimentos, visualização de resultados de exames e consulta a prescrições médicas.",
-      img: "../../public/PortalPaciente-Hall.jpg",
+      img: "./PortalPaciente-Hall.jpg",
       buttonText: "Ver projeto",
       link: "https://meu-projeto-delivery.com",
     },

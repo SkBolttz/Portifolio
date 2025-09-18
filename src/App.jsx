@@ -86,7 +86,6 @@ const handleAnimationComplete = () => {};
 function App() {
   return (
     <div>
-      {/* Header */}
       <div id="inicio">
         <Header />
         <div className="bg-[#3B2740] flex flex-col lg:flex-row items-center justify-between relative px-8 md:px-20 py-16">
@@ -151,7 +150,6 @@ function App() {
         </div>
       </div>
 
-      {/* Skills */}
       <div id="skills" className="bg-[#1F1F1F]">
         <div className="flex items-center justify-center relative px-8 md:px-20 py-16">
           <div>
@@ -190,128 +188,97 @@ function App() {
         </div>
       </div>
 
-      {/* Projetos */}
       <section id="projetos" className="bg-[#121212]">
-        <ScrollRevealAvancado
-          from="bottom"
-          delay={50}
-          duration={900}
-          stagger={50}
-        >
-          <div className="flex items-center justify-center relative py-14">
-            <div className="text-[50px] text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]">
-              <h2>Projetos</h2>
-            </div>
+        <div className="flex items-center justify-center relative py-14">
+          <div className="text-[50px] text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]">
+            <h2>Projetos</h2>
           </div>
-        </ScrollRevealAvancado>
+        </div>
+        <div className="flex items-center justify-center relative -translate-z-24">
+          <p className="text-[20px] text-[#B3B3B3] font-montserrat">
+            Alguns dos projetos que desenvolvi ao longo da minha jornada como
+            desenvolvedor
+          </p>
+        </div>
 
-        <ScrollRevealAvancado
-          from="bottom"
-          delay={50}
-          duration={900}
-          stagger={50}
-        >
-          <div className="flex items-center justify-center relative -translate-z-24">
-            <p className="text-[20px] text-[#B3B3B3] font-montserrat">
-              Alguns dos projetos que desenvolvi ao longo da minha jornada como
-              desenvolvedor
-            </p>
-          </div>
-
-          <div className="flex justify-center py-14">
-            <BackgroundGradientDemo />
-          </div>
-        </ScrollRevealAvancado>
+        <div className="flex justify-center py-14">
+          <BackgroundGradientDemo />
+        </div>
       </section>
 
-      {/* Projetos */}
       <div id="certificados">
         <div className="bg-[#1F1F1F]">
-          <ScrollRevealAvancado
-            from="bottom"
-            delay={50}
-            duration={900}
-            stagger={50}
-          >
-            <div className="flex justify-center px-8 md:px-20 py-16">
+          <div className="flex justify-center px-8 md:px-20 py-16">
+            <h1 className="text-[50px] text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]">
+              🎓 Meus Certificados em Programação 🚀
+            </h1>
+          </div>
+          <div className="flex justify-center mt-10">
+            <div className="text-center text-[#B3B3B3] text-sm sm:text-base mt-10 -translate-y-28">
+              <p className="text-[20px]">
+                Bem-vindo ao meu repositório! Aqui você vai encontrar uma
+                coleção dos meus <br /> certificados nas áreas de programação,
+                incluindo Front-end, Back-end e muito mais!
+                <br />
+                Vamos lá? 💻✨
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center py-16">
+            <div className="w-full max-w-7xl px-6 mb-20">
+              <h2 className="text-3xl md:text-4xl text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2] mb-8 text-center -translate-x-96">
+                🌟 Front-end Development
+              </h2>
+              <div className="w-full text-white text-sm sm:text-base">
+                <CertificadosFront />
+              </div>
+            </div>
+
+            <div className="w-full max-w-7xl px-6 mb-20">
+              <h2 className="text-3xl md:text-4xl text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2] mb-8 text-center -translate-x-96">
+                🔙 Back-end Development
+              </h2>
+              <div className="w-full text-white text-sm sm:text-base">
+                <CertificadosBack />
+              </div>
+            </div>
+
+            <div className="w-full max-w-7xl px-6">
+              <h2 className="text-3xl md:text-4xl text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2] mb-8 text-center -translate-x-96">
+                📚 Outros Certificados
+              </h2>
+              <div className="w-full text-white text-sm sm:text-base">
+                <OutrosCertificados />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contatos">
+        <div className="bg-[#1F1F1F] pb-20">
+          <div>
+            <div className="flex justify-center py-14">
               <h1 className="text-[50px] text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]">
-                🎓 Meus Certificados em Programação 🚀
+                Contato
               </h1>
             </div>
             <div className="flex justify-center mt-10">
               <div className="text-center text-[#B3B3B3] text-sm sm:text-base mt-10 -translate-y-28">
-                <p className="text-[20px]">
-                  Bem-vindo ao meu repositório! Aqui você vai encontrar uma
-                  coleção dos meus <br /> certificados nas áreas de programação,
-                  incluindo Front-end, Back-end e muito mais!
-                  <br />
-                  Vamos lá? 💻✨
+                <p className="text-[32px]">
+                  Vamos conversar sobre oportunidades e projetos interessantes
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center py-16">
-              <div className="w-full max-w-7xl px-6 mb-20">
-                <h2 className="text-3xl md:text-4xl text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2] mb-8 text-center -translate-x-96">
-                  🌟 Front-end Development
-                </h2>
-                <div className="w-full text-white text-sm sm:text-base">
-                  <CertificadosFront />
-                </div>
-              </div>
-
-              <div className="w-full max-w-7xl px-6 mb-20">
-                <h2 className="text-3xl md:text-4xl text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2] mb-8 text-center -translate-x-96">
-                  🔙 Back-end Development
-                </h2>
-                <div className="w-full text-white text-sm sm:text-base">
-                  <CertificadosBack />
-                </div>
-              </div>
-
-              <div className="w-full max-w-7xl px-6">
-                <h2 className="text-3xl md:text-4xl text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2] mb-8 text-center -translate-x-96">
-                  📚 Outros Certificados
-                </h2>
-                <div className="w-full text-white text-sm sm:text-base">
-                  <OutrosCertificados />
-                </div>
-              </div>
-            </div>
-          </ScrollRevealAvancado>
-        </div>
-      </div>
-
-      <ScrollRevealAvancado
-        from="bottom"
-        delay={50}
-        duration={900}
-        stagger={50}
-      >
-        <div id="contatos">
-          <div className="bg-[#1F1F1F] pb-20">
             <div>
-              <div className="flex justify-center py-14">
-                <h1 className="text-[50px] text-white font-bold font-montserrat drop-shadow-[0_0_15px_#8A2BE2]">
-                  Contato
-                </h1>
-              </div>
-              <div className="flex justify-center mt-10">
-                <div className="text-center text-[#B3B3B3] text-sm sm:text-base mt-10 -translate-y-28">
-                  <p className="text-[32px]">
-                    Vamos conversar sobre oportunidades e projetos interessantes
-                  </p>
-                </div>
-              </div>
-              <div>
-                <ContactForm />
-              </div>
+              <ContactForm />
             </div>
           </div>
         </div>
-        <div>
-          <Footer />
-        </div>
-      </ScrollRevealAvancado>
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

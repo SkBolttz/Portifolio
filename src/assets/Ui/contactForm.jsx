@@ -52,14 +52,22 @@ export default function ContactForm() {
 
         <div className="flex items-center">
           <div className="w-[70px] h-[70px] border-[1px] border-[#4F4A4F] rounded-[16px] py-4 mb-6 mr-6 hover:border-[#8A2BE2] transition duration-300 ease-in-out rounded-[16px] hover:shadow-[0_0_15px_#8A2BE2] hover:-translate-y-2">
-            <p className="text-[40px] text-[#F5F5F5] font-bold font-montserrat ml-2 -translate-y-4">
+            <a
+              className="text-[40px] text-[#F5F5F5] font-bold font-montserrat ml-2 flex -translate-y-4"
+              href="https://github.com/SkBolttz"
+              target="_blank"
+            >
               💼
-            </p>
+            </a>
           </div>
           <div className="w-[70px] h-[70px] border-[1px] border-[#4F4A4F] rounded-[16px] py-4 mb-6 hover:border-[#8A2BE2] transition duration-300 ease-in-out rounded-[16px] hover:shadow-[0_0_15px_#8A2BE2] hover:-translate-y-2">
-            <p className="text-[40px] text-[#F5F5F5] font-bold font-montserrat ml-2 -translate-y-4">
+            <a
+              className="text-[40px] text-[#F5F5F5] font-bold font-montserrat ml-2 flex -translate-y-4"
+              href="https://www.linkedin.com/in/pedro-borba-627493229/"
+              target="_blank"
+            >
               💻
-            </p>
+            </a>
           </div>
         </div>
       </div>

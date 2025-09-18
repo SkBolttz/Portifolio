@@ -2,7 +2,7 @@ import "../../index.css";
 
 export default function BotaoCircular({ texto }) {
   return (
-    <button className="relative px-6 py-2 rounded-full text-white bg-[#000404] overflow-hidden transition-colors duration-300 hover:bg-[#AC46FF] w-[350px] h-[50px]">
+    <button className="relative w-full max-w-[350px] h-[50px] px-6 rounded-full text-white bg-[#000404] overflow-hidden transition-colors duration-300 hover:bg-[#AC46FF] hover:text-white">
       <span
         className="absolute inset-0 rounded-full bg-gradient-to-r from-[#741C68] via-[#4E0D81] to-[#8A2BE2] animate-gradient-slow pointer-events-none"
         style={{

@@ -31,24 +31,24 @@ export function BackgroundGradientDemo() {
   ];
 
   return (
-    <div className="flex flex-wrap gap-64 justify-center items-stretch">
+    <div className="flex flex-wrap gap-10 sm:gap-14 md:gap-16 justify-center items-stretch">
       {cards.map((card, index) => (
         <BackgroundGradient
           key={index}
-          className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900 flex flex-col justify-between w-full"
+          className="rounded-[22px] max-w-sm sm:max-w-[360px] md:max-w-sm p-4 sm:p-6 md:p-10 bg-white dark:bg-zinc-900 flex flex-col justify-between w-full"
           style={{ minHeight: "500px" }}
         >
           <img
             src={card.img}
             alt={card.title}
-            className="object-contain h-72 w-full rounded-lg"
+            className="object-contain h-64 sm:h-72 md:h-72 w-full rounded-lg"
           />
 
           <div className="mt-4 flex-1">
-            <p className="text-base sm:text-xl text-black mb-2 dark:text-neutral-200">
+            <p className="text-base sm:text-lg md:text-xl text-black mb-2 dark:text-neutral-200">
               {card.title}
             </p>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-400">
               {card.description}
             </p>
           </div>
@@ -57,7 +57,7 @@ export function BackgroundGradientDemo() {
             href={card.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold bg-[#040304] hover:bg-zinc-700 transition"
+            className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-[#040304] hover:bg-zinc-700 transition text-xs sm:text-sm font-bold mt-4"
           >
             <span>{card.buttonText}</span>
             <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white"></span>
@@ -67,5 +67,3 @@ export function BackgroundGradientDemo() {
     </div>
   );
 }
-    // #040304 Padrao.
-    // #000404
